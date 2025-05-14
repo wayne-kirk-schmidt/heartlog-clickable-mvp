@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,42 +8,66 @@
   <style>
     html {
       background-color: rgba(27, 38, 54, 1);
-      text-align: center;
       color: white;
       font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+      height: 100%;
     }
     body {
       margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
     .container {
-      max-width: 640px;
-      margin: 5% auto;
+      display: flex;
       background-color: white;
       color: #1B2636;
       padding: 2rem;
       border-radius: 1rem;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      max-width: 960px;
+      width: 90%;
+    }
+    .logo-section {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-right: 2rem;
+      border-right: 1px solid #ccc;
+    }
+    .logo {
+      max-width: 240px;
+      height: auto;
+    }
+    .links-section {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 2rem;
     }
     h1 {
-      font-size: 2.25rem;
+      font-size: 2rem;
       font-weight: 700;
+      margin: 0 0 0.5rem 0;
       color: #14532d;
     }
     h2 {
       font-size: 1.25rem;
       font-weight: 500;
       margin-bottom: 1.5rem;
-      color: #1B2636;
     }
     a.button-link {
-      display: block;
       background-color: #22c55e;
       color: white;
       padding: 0.75rem 1rem;
-      margin: 0.5rem 0;
+      margin: 0.25rem 0;
       border-radius: 0.5rem;
       text-decoration: none;
       font-weight: 600;
+      text-align: center;
       transition: background-color 0.3s ease;
     }
     a.button-link:hover {
@@ -52,16 +77,19 @@
 </head>
 <body>
   <div class="container">
-    <h1>HeartLog</h1>
-    <h2>Navigate your experience</h2>
-    <a class="button-link" href="heartlog_signup.html">Sign Up</a>
-    <a class="button-link" href="heartlog_signin.html">Sign In</a>
-    <a class="button-link" href="heartlog_contact.html">Contact</a>
-    <a class="button-link" href="heartlog_journey.html">Journey</a>
-    <a class="button-link" href="heartlog_memories.html">Memories</a>
-    <a class="button-link" href="heartlog_preferences.html">Preferences</a>
-    <a class="button-link" href="heartlog_pricing.html">Pricing</a>
-    <a class="button-link" href="heartlog_storyguide.html">Story Guides</a>
+    <div class="logo-section">
+      <img src="heartlog-logo.jpg" alt="HeartLog Logo" class="logo" />
+    </div>
+    <div class="links-section">
+      <a class="button-link" href="heartlog_signup.html">Sign Up</a>
+      <a class="button-link" href="heartlog_signin.html">Sign In</a>
+      <a class="button-link" href="heartlog_contact.html">Contact</a>
+      <a class="button-link" href="heartlog_journey.html">Journey</a>
+      <a class="button-link" href="heartlog_memories.html">Memories</a>
+      <a class="button-link" href="heartlog_preferences.html">Preferences</a>
+      <a class="button-link" href="heartlog_pricing.html">Pricing</a>
+      <a class="button-link" href="heartlog_storyguide.html">Story Guides</a>
+    </div>
   </div>
 </body>
 </html>
